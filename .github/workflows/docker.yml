@@ -22,5 +22,9 @@ jobs:
         run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
       - name: push
         run: docker push stakkes/frontend-js:latest
+  webhook:
+  uses: distributhor/workflow-webhook@v2
+      env:
+        webhook_url: ${{ secrets.WEBHOOK_URL }}
 
   
