@@ -1,3 +1,4 @@
+LABEL org.opencontainers.image.source= "git@github.com:stan435/forntend.git"
 FROM node:19-buster
 # Create app directory
 WORKDIR /usr/src/docker-react-sample
