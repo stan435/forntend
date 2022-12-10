@@ -1,5 +1,3 @@
-From stakkes/frontend-js
-LABEL org.opencontainers.image.source="https://github.com/stan435/forntend"
 FROM node:19-buster
 # Create app directory
 WORKDIR /usr/src/docker-react-sample
